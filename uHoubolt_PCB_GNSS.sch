@@ -1,4 +1,232 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TXV_Library_Symbols:SAM-M8Q U1
+U 1 1 60A939E7
+P 5725 4000
+F 0 "U1" H 5725 4625 50  0000 C CNN
+F 1 "SAM-M8Q" H 5725 4550 50  0000 C CNN
+F 2 "TXV_Library_Footprints:SAM-M8Q" H 5725 3450 50  0001 C CNN
+F 3 "" H 3975 4150 50  0001 C CNN
+	1    5725 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x04_MountingPin J1
+U 1 1 60A94B64
+P 3875 3250
+F 0 "J1" H 3875 3525 50  0000 C CNN
+F 1 "UART" H 3875 3450 50  0000 C CNN
+F 2 "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical" H 3875 3250 50  0001 C CNN
+F 3 "~" H 3875 3250 50  0001 C CNN
+	1    3875 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 60A96A67
+P 4100 3700
+F 0 "#PWR0101" H 4100 3450 50  0001 C CNN
+F 1 "GND" H 4105 3527 50  0000 C CNN
+F 2 "" H 4100 3700 50  0001 C CNN
+F 3 "" H 4100 3700 50  0001 C CNN
+	1    4100 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3875 3675 4100 3675
+Wire Wire Line
+	4100 3675 4100 3450
+Wire Wire Line
+	4100 3450 4075 3450
+Wire Wire Line
+	3875 3675 3875 3650
+Wire Wire Line
+	4100 3700 4100 3675
+Connection ~ 4100 3675
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 60A97A8C
+P 4100 3075
+F 0 "#PWR0102" H 4100 2925 50  0001 C CNN
+F 1 "+3V3" H 4115 3248 50  0000 C CNN
+F 2 "" H 4100 3075 50  0001 C CNN
+F 3 "" H 4100 3075 50  0001 C CNN
+	1    4100 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3075 4100 3150
+Wire Wire Line
+	4100 3150 4075 3150
+$Comp
+L power:GND #PWR0103
+U 1 1 60A98744
+P 5125 4500
+F 0 "#PWR0103" H 5125 4250 50  0001 C CNN
+F 1 "GND" H 5130 4327 50  0000 C CNN
+F 2 "" H 5125 4500 50  0001 C CNN
+F 3 "" H 5125 4500 50  0001 C CNN
+	1    5125 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5175 4450 5125 4450
+Wire Wire Line
+	5125 4450 5125 4500
+NoConn ~ 6275 4150
+NoConn ~ 6275 3950
+NoConn ~ 6275 3850
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 60A99226
+P 5100 3475
+F 0 "#PWR0104" H 5100 3325 50  0001 C CNN
+F 1 "+3V3" H 5115 3648 50  0000 C CNN
+F 2 "" H 5100 3475 50  0001 C CNN
+F 3 "" H 5100 3475 50  0001 C CNN
+	1    5100 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3475 5100 3550
+Wire Wire Line
+	5100 3650 5175 3650
+Wire Wire Line
+	5175 3550 5100 3550
+Connection ~ 5100 3550
+Wire Wire Line
+	5100 3550 5100 3650
+Connection ~ 5100 3650
+Connection ~ 5125 4450
+$Comp
+L Device:C_Small C1
+U 1 1 60A9A9AD
+P 4950 4125
+F 0 "C1" H 5050 4200 50  0000 R CNN
+F 1 "1u" H 5050 4050 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4950 4125 50  0001 C CNN
+F 3 "~" H 4950 4125 50  0001 C CNN
+	1    4950 4125
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4225 4950 4325
+Wire Wire Line
+	4950 4325 5125 4325
+Wire Wire Line
+	5125 4325 5125 4450
+Wire Wire Line
+	4950 4025 4950 3875
+Wire Wire Line
+	4950 3875 5100 3875
+Wire Wire Line
+	5100 3875 5100 3750
+Text Label 6500 3550 2    50   ~ 0
+TxD
+Text Label 6500 3650 2    50   ~ 0
+RxD
+Wire Wire Line
+	6500 3650 6275 3650
+Wire Wire Line
+	6275 3550 6500 3550
+Text Label 4300 3250 2    50   ~ 0
+TxD
+Text Label 4300 3350 2    50   ~ 0
+RxD
+Wire Wire Line
+	4300 3350 4075 3350
+Wire Wire Line
+	4075 3250 4300 3250
+$Comp
+L Device:C_Small C2
+U 1 1 60A9EC11
+P 4800 4125
+F 0 "C2" H 4900 4200 50  0000 R CNN
+F 1 "1u" H 4900 4050 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4800 4125 50  0001 C CNN
+F 3 "~" H 4800 4125 50  0001 C CNN
+	1    4800 4125
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 60A9EFC5
+P 4650 4125
+F 0 "C3" H 4750 4200 50  0000 R CNN
+F 1 "1u" H 4750 4050 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4650 4125 50  0001 C CNN
+F 3 "~" H 4650 4125 50  0001 C CNN
+	1    4650 4125
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4025 4800 3875
+Wire Wire Line
+	4800 3875 4950 3875
+Connection ~ 4950 3875
+Wire Wire Line
+	4650 4025 4650 3875
+Wire Wire Line
+	4650 3875 4800 3875
+Connection ~ 4800 3875
+Wire Wire Line
+	4800 4225 4800 4325
+Wire Wire Line
+	4800 4325 4950 4325
+Connection ~ 4950 4325
+Wire Wire Line
+	4650 4225 4650 4325
+Wire Wire Line
+	4650 4325 4800 4325
+Connection ~ 4800 4325
+NoConn ~ 5175 3950
+NoConn ~ 5175 4050
+NoConn ~ 5175 4250
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60AA6F1D
+P 4125 3150
+F 0 "#FLG?" H 4125 3225 50  0001 C CNN
+F 1 "PWR_FLAG" V 4125 3278 50  0000 L CNN
+F 2 "" H 4125 3150 50  0001 C CNN
+F 3 "~" H 4125 3150 50  0001 C CNN
+	1    4125 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60AA77A1
+P 4125 3450
+F 0 "#FLG?" H 4125 3525 50  0001 C CNN
+F 1 "PWR_FLAG" V 4125 3578 50  0000 L CNN
+F 2 "" H 4125 3450 50  0001 C CNN
+F 3 "~" H 4125 3450 50  0001 C CNN
+	1    4125 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4125 3450 4100 3450
+Connection ~ 4100 3450
+Wire Wire Line
+	4125 3150 4100 3150
+Connection ~ 4100 3150
+Wire Wire Line
+	5175 3750 5100 3750
+Connection ~ 5100 3750
+Wire Wire Line
+	5100 3750 5100 3650
 $EndSCHEMATC
