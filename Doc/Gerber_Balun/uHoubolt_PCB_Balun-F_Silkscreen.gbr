@@ -1,0 +1,26 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,6.0.5-a6ca702e91~116~ubuntu20.04.1*%
+%TF.CreationDate,2022-05-11T23:18:58+02:00*%
+%TF.ProjectId,uHoubolt_PCB_Balun,75486f75-626f-46c7-945f-5043425f4261,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Legend,Top*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 6.0.5-a6ca702e91~116~ubuntu20.04.1) date 2022-05-11 23:18:58*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,0.150000*%
+%ADD11C,0.120000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,*%
+D11*
+%TO.C,U1*%
+X158530000Y-80742000D02*
+X158530000Y-82642000D01*
+X156430000Y-81442000D02*
+X156430000Y-82642000D01*
+%TD*%
+M02*

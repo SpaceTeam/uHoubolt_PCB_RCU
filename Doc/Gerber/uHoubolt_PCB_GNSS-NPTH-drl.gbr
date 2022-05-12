@@ -1,15 +1,21 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,5.1.7-a382d34a8~88~ubuntu20.04.1*%
-%TF.CreationDate,2021-06-08T03:13:43+02:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,6.0.5-a6ca702e91~116~ubuntu20.04.1*%
+%TF.CreationDate,2022-05-11T23:16:14+02:00*%
 %TF.ProjectId,uHoubolt_PCB_GNSS,75486f75-626f-46c7-945f-5043425f474e,rev?*%
 %TF.SameCoordinates,PX8f0d180PY5f5e100*%
-%TF.FileFunction,NonPlated,1,2,NPTH*%
+%TF.FileFunction,NonPlated,1,4,NPTH,Drill*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 5.1.7-a382d34a8~88~ubuntu20.04.1) date 2021-06-08 03:13:43*
+G04 Created by KiCad (PCBNEW 6.0.5-a6ca702e91~116~ubuntu20.04.1) date 2022-05-11 23:16:14*
 %MOMM*%
 %LPD*%
 G01*
 G04 APERTURE LIST*
+%TA.AperFunction,ComponentDrill*%
+%ADD10C,1.300000*%
+%TD*%
 G04 APERTURE END LIST*
+D10*
+%TO.C,J1*%
+X-488000Y36506000D03*
 M02*

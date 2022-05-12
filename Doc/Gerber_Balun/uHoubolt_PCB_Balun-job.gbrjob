@@ -5,17 +5,17 @@
       "Application": "Pcbnew",
       "Version": "6.0.5-a6ca702e91~116~ubuntu20.04.1"
     },
-    "CreationDate": "2022-05-11T23:19:58+02:00"
+    "CreationDate": "2022-05-11T23:18:58+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "uHoubolt_PCB_GNSS_Cover",
-      "GUID": "75486f75-626f-46c7-945f-5043425f474e",
+      "Name": "uHoubolt_PCB_Balun",
+      "GUID": "75486f75-626f-46c7-945f-5043425f4261",
       "Revision": "rev?"
     },
     "Size": {
-      "X": 86.12,
-      "Y": 86.12
+      "X": 12.1,
+      "Y": 8.1
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -24,44 +24,56 @@
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.0,
-      "PadToTrack": 0.0,
-      "TrackToTrack": 0.2
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
+      "TrackToTrack": 0.2,
+      "TrackToRegion": 0.254,
+      "RegionToRegion": 0.254
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "uHoubolt_PCB_GNSS_Cover-F_Cu.gbr",
+      "Path": "uHoubolt_PCB_Balun-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "uHoubolt_PCB_GNSS_Cover-B_Cu.gbr",
+      "Path": "uHoubolt_PCB_Balun-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "uHoubolt_PCB_GNSS_Cover-F_Silkscreen.gbr",
+      "Path": "uHoubolt_PCB_Balun-F_Paste.gbr",
+      "FileFunction": "SolderPaste,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "uHoubolt_PCB_Balun-B_Paste.gbr",
+      "FileFunction": "SolderPaste,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "uHoubolt_PCB_Balun-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "uHoubolt_PCB_GNSS_Cover-B_Silkscreen.gbr",
+      "Path": "uHoubolt_PCB_Balun-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "uHoubolt_PCB_GNSS_Cover-F_Mask.gbr",
+      "Path": "uHoubolt_PCB_Balun-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "uHoubolt_PCB_GNSS_Cover-B_Mask.gbr",
+      "Path": "uHoubolt_PCB_Balun-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "uHoubolt_PCB_GNSS_Cover-Edge_Cuts.gbr",
+      "Path": "uHoubolt_PCB_Balun-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
@@ -77,24 +89,29 @@
     },
     {
       "Type": "SolderMask",
+      "Thickness": 0.01,
       "Name": "Top Solder Mask"
     },
     {
       "Type": "Copper",
+      "Thickness": 0.035,
       "Name": "F.Cu"
     },
     {
       "Type": "Dielectric",
+      "Thickness": 1.51,
       "Material": "FR4",
       "Name": "F.Cu/B.Cu",
       "Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)"
     },
     {
       "Type": "Copper",
+      "Thickness": 0.035,
       "Name": "B.Cu"
     },
     {
       "Type": "SolderMask",
+      "Thickness": 0.01,
       "Name": "Bottom Solder Mask"
     },
     {
